@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Curso Técnico de Informática</title>
+	</head>
+	<body>
+		<h1>CEFET - Campus VIII - Varginha - Curso Técnico de Informática - 3o Ano</h1>
+		<ul>
+			<li><a href="inicio.html">Início</a></li>
+			<li><a href="curso.html">Curso</a></li>
+			<li><a href="FAQ.html">FAQ</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+		<form method="post" action="salvar.php">
+			<fieldset>
+				<legend>Contato</legend>
+				<label for="nome">Nome:</label>
+				<input type="text" name="completo" id="completo" placeholder="Thiago">
+				<br>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" placeholder="thiago@correa.com.br">
+				<br>
+				<input type="radio" name="genero" value="M" id="masc"> <label for="masc">Masculino</label>
+				<input type="radio" name="genero" value="F" id="fem"> <label for="fem">Feminino</label>
+				<br>
+				Telefone <select name = "telefone">
+					<option value = "branco"></option>
+					<option value = "00000000">00000000</option>
+					<option value = "31">31</option>
+					<option value = "11">11</option>
+					<option value = "35">35</option>
+				</select>
+				<input type="text" name="telefone" id="telefone" maxlength="9">
+				<br>
+				<label for="arquivo">Selecione o arquivo: </label>
+				<input type="file" name="arquivo">
+				<br>
+				<label for="sugestao">Sugestão: </label>
+				<br>
+				<textarea name="sugestao" id="sugestao" cols="70" rows="5"></textarea>
+				<br>
+				<input type="image" src="Submit.jpeg" alt="submit" width="60" height="60">
+			</fieldset>
+		</form>
+	</body>
+</html>
